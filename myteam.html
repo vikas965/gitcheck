@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="parent-container">
+    <div class="side-nav">
+        <div class="nav-icons">
+            <div class="main-logo">
+                <img src="newLogo.svg" alt="">
+            </div>
+            <div class="iconslist">
+                <div class="icon-tag icon-active">
+                  <a href="home.html"> <i class="fa-solid fa-house"></i></a> 
+                    <p class="icon-name">Home</p>
+                </div>
+                <div class="icon-tag">
+                  <a href="me.html"><i class="fa-solid fa-user"></i></a>  
+                    <p class="icon-name">Me</p>
+                </div>
+                <div class="iconactive">
+                 <a href="#"><i class="fa-solid fa-people-group"></i></a>   
+                    
+                </div>
+                <div class="icon-tag">
+                    <a href="organization.html"> <i class="fa-solid fa-building-user"></i></a>
+                   
+                    <p class="icon-name">Organization</p>
+                </div>
+
+
+               
+                
+                
+               
+            </div>
+        </div>
+    </div>
+    <div class="main-dashboard">
+        <div class="dash-nav">
+            <div class="dashname">
+                <p>Dashboard</p>
+            </div>
+            <div onclick="togglehidden()" class="profiledata">
+               <div class="maindata">
+                <img src="profilepicture.png" alt="">
+                <p>Vikas Mahanthi</p>
+                <i class="fa-solid fa-angle-down"></i>
+               </div>
+               
+            </div>
+            <div id="hiddendata" class="hiddendata" >
+                <p id="profile">Profile</p>
+                <p id="logout">Logout</p>
+               </div>
+        </div>
+
+        <div class="dash-content">
+            <div class="contsection1">
+                <div class="myhsift"></div>
+                <div class="organization"></div>
+            </div>
+            <div class="contsection2">
+
+            </div>
+        </div>
+    </div>
+   </div>
+
+  <script src="new.js"></script>
+</body>
+</html>

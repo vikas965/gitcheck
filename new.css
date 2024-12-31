@@ -1,0 +1,218 @@
+
+* ,html,body{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font-family: Helvetica, sans-serif;
+}
+
+
+.parent-container{
+width: 100vw;
+height: 100vh;
+padding: 0.6rem 0.6rem 0.6rem 0;
+background-color: rgb(19, 52, 121);
+display: grid;
+grid-template-columns: 5% 95%;
+}
+
+.side-nav{
+  /* background-color: blue; */
+  padding-top: 1rem;
+  
+
+}
+.nav-icons{
+    width: 100%;
+    display: flex;
+    padding: 0.3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo{
+    width: 100%;
+    height:100%;
+    padding: 0.5rem;
+
+}
+.iconslist{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.3rem;
+    row-gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.iconslist .icon-tag {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    
+}
+.iconslist .icon-tag p{
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-weight: bold;
+}
+.iconslist .icon-tag i{
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+}
+.iconslist .icon-tag i:hover{
+    color: orange;
+    
+    
+}
+
+.iconactive{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    color:  rgb(27, 56, 117); 
+    background-color: white;
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+    font-size: 1.3rem;
+    border-radius: 8px;
+}
+
+.main-dashboard{
+    
+    background-color: rgb(236, 236, 241);
+    border-radius: 1.5rem;
+    height: 99%;
+    
+    
+    
+}
+.main-dashboard::-webkit-scrollbar{
+    display: none;
+}
+
+.main-dashboard .dash-nav{
+    width: 100%;
+    height: 5rem;
+    padding: 1.4rem;
+    background-color: white;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    
+}
+
+.main-dashboard .dash-nav .dashname {
+ color: rgb(38, 38, 145);
+ font-size:1.6rem;
+ font-weight: 300;
+}
+.main-dashboard .dash-nav .profiledata .maindata{
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.6rem;
+    cursor: pointer;
+}
+
+
+.main-dashboard .dash-nav  .hiddendata{
+    position: fixed;
+    top: 10%;
+    left: 87%;
+    background-color:white ;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    width: 10rem;
+    padding: 1.2rem;
+    height: 4.5rem;
+    border-radius: 4px;
+    display: none;
+    
+}
+
+.main-dashboard .dash-nav  .hiddendata p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.main-dashboard .dash-nav  .hiddendata #logout{
+    color: rgb(231, 127, 17);
+    margin-top: 0.5rem;
+   
+}
+.main-dashboard .dash-nav .profiledata .maindata img{
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 100%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.main-dashboard .dash-nav .profiledata .maindata p{
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.main-dashboard .dash-nav .profiledata .maindata i{
+    font-size: 12px;
+}
+
+.main-dashboard .dash-content {
+    width: 100%;
+    height: 85vh;
+    padding: 1rem;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    
+    overflow-y: scroll;
+    /* flex-grow: 1; */
+    /* border-radius: 1.5rem; */
+    z-index: 40;
+}
+
+.main-dashboard .dash-content::-webkit-scrollbar {
+    width: 12px;  
+               /* width of the entire scrollbar */
+  }
+  
+  .main-dashboard .dash-content::-webkit-scrollbar-track {
+    background: rgb(254, 253, 251);  
+    border-radius: 20px;
+          /* color of the tracking area */
+  }
+  
+  .main-dashboard .dash-content::-webkit-scrollbar-thumb {
+    background-color: rgb(189, 189, 192);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(198, 197, 195);  /* creates padding around scroll thumb */
+  }
+
+
+  .main-dashboard .dash-content .contsection1{
+    width: 100%;
+    height: 100%;
+  }
+
+ .main-dashboard .dash-content .contsection1 .myshift{
+     width: 80px;
+     height: 40px;
+     color: red;
+     background-color: white;
+ }
