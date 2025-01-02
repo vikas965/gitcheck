@@ -205,14 +205,4 @@ font-weight: bold;
   }
 
 
-  .main-dashboard .dash-content .contsection1{
-    width: 100%;
-    height: 100%;
-  }
-
- .main-dashboard .dash-content .contsection1 .myshift{
-     width: 80px;
-     height: 40px;
-     color: red;
-     background-color: white;
- }
+ 
