@@ -85,7 +85,7 @@ font-weight: bold;
     justify-content: center;
     row-gap: 5px;
     cursor: pointer;
-    color:  rgb(27, 56, 117); 
+    color:  rgba(27, 56, 117, 0.638); 
     background-color: white;
     padding: 0.7rem 0.2rem 0.7rem 0.2rem;
     font-size: 1.3rem;
