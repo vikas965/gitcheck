@@ -14,7 +14,7 @@
 
  .main-dashboard .dash-content .contsection1 .myshift{
      width: 97%;
-     height: 38%;
+     height: 36vh;
      color: black;
      box-shadow: rgba(158, 157, 167, 0.15) 0px 48px 100px 0px;
      background-color: white;
@@ -31,7 +31,7 @@
  }
  .main-dashboard .dash-content .contsection2 .myleave{
      width: 100%;
-     height: 60%;
+     height: 53vh;
      color: black;
      box-shadow: rgba(158, 157, 167, 0.15) 0px 48px 100px 0px;
      background-color: white;
@@ -267,6 +267,7 @@ border-radius: 5px;
  .main-dashboard .dash-content .contsection2 .holidays .title{
   width:100%;
   padding: 1.5rem;
+  padding-bottom: 0.2rem;
 }
  .main-dashboard .dash-content .contsection2 .holidays .holidaylist{
   width:100%;
@@ -274,6 +275,146 @@ border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 0.8rem;
   
+}
+.main-dashboard .dash-content .contsection2 .holidays .holidaylist .holiday{
+  width: 30%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(240, 239, 239, 0.938);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: wrap;
+  row-gap: 0.5rem;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-dashboard .dash-content .contsection2 .holidays .holidaylist .holiday .name{
+  font-size: 14px;
+}
+.main-dashboard .dash-content .contsection2 .holidays .holidaylist .holiday .date{
+  font-size: 10px;
+}
+.main-dashboard .dash-content .contsection1 .organization .title{
+  width:100%;
+  padding: 1.2rem;
+  padding-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-dashboard .dash-content .contsection1 .organization .title .usermanual{
+  display: flex;
+  padding: 0.8rem;
+  color: white;
+  column-gap: 6px;
+  background-color: rgb(4, 4, 108);
+  border-radius: 7px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.main-dashboard .dash-content .contsection1 .organization .secondrow{
+  padding-top: 0.3rem;
+  padding-left: 1.3rem;
+}
+.main-dashboard .dash-content .contsection1 .organization .secondrow .navigationdays {
+ width: 60%;
+ padding: 0.4rem;
+ background-color: rgba(234, 230, 230, 0.879);
+ border-radius: 7px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+.main-dashboard .dash-content .contsection1 .organization .secondrow .navigationdays p{
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.273);
+  cursor: pointer;
+}
+.main-dashboard .dash-content .contsection1 .organization .secondrow .navigationdays p:hover{
+  color: rgb(11, 11, 99);
+}
+.main-dashboard .dash-content .contsection1 .organization .secondrow .navigationdays p:first-child{
+  color: rgb(11, 11, 99);
+}
+.main-dashboard .dash-content .contsection1 .organization .today .title,.main-dashboard .dash-content .contsection1 .organization .next7days .title{
+  width:100%;
+  padding: 1.2rem;
+  padding-bottom: 0.2rem;
+  font-weight: 600;
+}
+.main-dashboard .dash-content .contsection1 .organization .today .todayprofiles,.main-dashboard .dash-content .contsection1 .organization .next7days .todayprofiles{
+  width: 100%;
+  padding:2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+}
+.main-dashboard .dash-content .contsection1 .organization .userprofile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.main-dashboard .dash-content .contsection1 .organization  .userprofile img{
+  width: 2.3rem;
+   height: 2.3rem;
+   border-radius: 100%;
+   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.main-dashboard .dash-content .contsection1 .organization  .userprofile .popname{
+  /* display: none; */
+}
+.main-dashboard .dash-content .contsection1 .organization  .userprofile .name{
+  white-space: nowrap; 
+  width: 80px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-dashboard .dash-content .contsection1 .organization .userprofile .date{
+  color: grey;
+  font-size: 10px;
+}
+
+.main-dashboard .dash-content .contsection1 .organization .userprofile .popname{
+  display: none;
+   position: absolute;
+   bottom: 107%;
+   left: 50%;
+   transform: translate(-50%);
+   z-index: 3;
+   background-color: rgb(5, 5, 96);
+   color: white;
+   padding:9px;
+   border-radius: 7px;
+   padding-left: 14px;
+   padding-right: 14px;
+   font-size: 13px;
+   text-align: center;
+   text-wrap: wrap;
+   width: 10rem;
+}
+
+.main-dashboard .dash-content .contsection1 .organization .userprofile:hover .popname{
+  display: block;
 }
