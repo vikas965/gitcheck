@@ -204,5 +204,44 @@ font-weight: bold;
     border: 3px solid rgb(198, 197, 195);  /* creates padding around scroll thumb */
   }
 
+  @media screen and (max-width: 480px) {
+   .side-nav{
+    display: none;
+   }
+   .parent-container{
+    
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    gap: 2rem;
+    height: 100vh;
+    background-color: white;
+    }
+
+    .main-dashboard{
+        background-color: white;
+        height: 100vh;
+
+    }
+
+    .main-dashboard .dash-content {
+        width: 100%;
+        height: 100vh;
+        padding: 1rem;
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 2rem; */
+        /* overflow-y: scroll; */
+        /* flex-grow: 1; */
+        /* border-radius: 1.5rem; */
+        z-index: 40;
+    }
+    .main-dashboard .dash-content::-webkit-scrollbar {
+        display: none;  
+                   /* width of the entire scrollbar */
+      }
+  }
+
 
  
