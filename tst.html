@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        /* padding: 2rem; */
+        background-color: rgba(1, 4, 4, 0.905);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .constant {
+        width: 50%;
+        height: 50%;
+        background-color: rgba(8, 20, 20, 0.386);
+      }
+
+      /* .constant:nth-child(2)
+      {
+        margin-left: 50%;
+      } */
+
+      .chessboard {
+        width: 35rem;
+        height: 35rem;
+        border: solid 1px black;
+        box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
+      }
+
+      .chessboard .row{
+        width: 100%;
+        height: 12.5%;
+        display: flex;
+        
+      }
+
+      .chessboard .row .white{
+       width: 12.5%;
+       height: 100%;
+       background-color: white;
+      }
+      .chessboard .row .black{
+       width: 12.5%;
+       height: 100%;
+       background-color: rgb(0, 0, 0);
+      }
+      .chessboard .row .column{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .chessboard .row .column img{
+        width: 85%;
+        height: 85%;
+       
+      }
+
+      .chessboard .row .yellow img{
+        filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+      }
+      .chessboard .row .silver img{
+        filter: drop-shadow(0 0 0.25rem rgb(192,192,192));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chessboard">
+        <div class="row">
+          <div class="column white yellow"><img src="chesspieces/chessrook.png" alt=""></div>
+          <div class="column black yellow"><img src="chesspieces/chessknightright.png" alt=""></div>
+          <div class="column white yellow"><img src="chesspieces/chessbishop.png" alt=""></div>
+          <div class="column black yellow"><img src="chesspieces/chessqueen.png" alt=""></div>
+          <div class="column white yellow"><img src="chesspieces/chessking.png" alt=""></div>
+          <div class="column black yellow"><img src="chesspieces/chessbishop.png" alt=""></div>
+          <div class="column white yellow"><img src="chesspieces/chessknightleft.png" alt=""></div>
+          <div class="column black yellow"><img src="chesspieces/chessrook.png" alt=""></div>
+        </div>
+
+        <div class="row">
+          <div class="column black yellow"><img src="chesspieces\chesspawn.png" alt=""></div>
+          <div class="column white yellow"><img src="chesspieces\chesspawn.png" alt=""></div>
+          <div class="column black yellow"><img src="chesspieces\chesspawn.png" alt=""></div>
+          <div class="column white yellow"><img src="chesspieces\chesspawn.png" alt=""></div>
+          <div class="column black yellow"><img src="chesspieces\chesspawn.png" alt=""></div>
+          <div class="column white yellow"><img src="chesspieces\chesspawn.png" alt=""></div>
+          <div class="column black yellow"><img src="chesspieces\chesspawn.png" alt=""></div>
+          <div class="column white yellow"><img src="chesspieces\chesspawn.png" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+        </div>
+
+        <div class="row">
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+        </div>
+        <div class="row">
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+        </div>
+
+        <div class="row">
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+          <div class="column black"></div>
+          <div class="column white"></div>
+        </div>
+        <div class="row">
+          <div class="column white silver"><img src="chesspieces\chesssilverpawn.png" alt=""></div>
+          <div class="column black silver"><img src="chesspieces\chesssilverpawn.png" alt=""></div>
+          <div class="column white silver"><img src="chesspieces\chesssilverpawn.png" alt=""></div>
+          <div class="column black silver"><img src="chesspieces\chesssilverpawn.png" alt=""></div>
+          <div class="column white silver"><img src="chesspieces\chesssilverpawn.png" alt=""></div>
+          <div class="column black silver"><img src="chesspieces\chesssilverpawn.png" alt=""></div>
+          <div class="column white silver"><img src="chesspieces\chesssilverpawn.png" alt=""></div>
+          <div class="column black silver"><img src="chesspieces\chesssilverpawn.png" alt=""></div>
+        </div>
+
+        <div class="row">
+            <div class="column black silver"><img src="chesspieces/chesssilverrook.png" alt=""></div>
+            <div class="column white silver"><img src="chesspieces/chesssilverknightright.png" alt=""></div>
+            <div class="column black silver"><img src="chesspieces/chesssilverbishop.png" alt=""></div>
+            <div class="column white silver"><img src="chesspieces/chesssilverking.png" alt=""></div>
+            <div class="column black silver"><img src="chesspieces/chesssilverqueen.png" alt=""></div>
+            <div class="column white silver"><img src="chesspieces/chesssilverbishop.png" alt=""></div>
+            <div class="column black silver"><img src="chesspieces/chesssilverknightleft.png" alt=""></div>
+            <div class="column white silver"><img src="chesspieces/chesssilverrook.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

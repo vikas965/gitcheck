@@ -179,9 +179,6 @@ border-radius: 5px;
    justify-content: space-between;
    padding: 1rem;
  }
- .main-dashboard .dash-content .contsection1 .myshift .thirdrow .workingdays{
-   /* width: 200px; */
- }
 
  .main-dashboard .dash-content .contsection1 .myshift .thirdrow .workingdays .days{
    
@@ -380,9 +377,7 @@ border-radius: 5px;
    border-radius: 100%;
    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
-.main-dashboard .dash-content .contsection1 .organization  .userprofile .popname{
-  /* display: none; */
-}
+
 .main-dashboard .dash-content .contsection1 .organization  .userprofile .name{
   white-space: nowrap; 
   width: 80px; 
